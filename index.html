@@ -17,16 +17,17 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bike-primary': '#E76F51',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bike-primary': '#E76F51',
+                        'bg-secondary': 'rgba(231, 111, 81, 0.10)',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- Css style -->
     <style>
@@ -38,6 +39,7 @@
 </head>
 
 <body class="font-poppins">
+    <!-- Navbar start -->
     <header class="md:container md:mx-auto">
         <div class="navbar bg-base-100">
             <div class="flex-1">
@@ -45,7 +47,8 @@
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
                     <ul tabindex="0"
@@ -70,9 +73,51 @@
                 <a class="btn bg-bike-primary text-white px-8 ">Login</a>
             </div>
         </div>
+        <!-- Navbar end -->
+        <!-- Slider or carousel start -->
+        <div class="carousel w-full bg-bg-secondary">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex  p-24">
+                    <div class="space-y-4 flex-1">
+                        <h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                        <p class="text-base font-light"> Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.
+                        </p>
+                        <button class="btn bg-bike-primary text-white px-8">Purchase</button>
+                    </div>
+                    <div class="space-y-4 flex-1">
+                        <img src="/images/slider/bike1.png" class="w-full" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="/images/slider/bike2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="/images/slider/bike3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="/images//slider/bike4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slider or carousel End -->
     </header>
     <main class="md:container md:mx-auto">
-        Hello
 
 
     </main>
